@@ -20,11 +20,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'brand-new-smartaml'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('brand-new-smartaml');
-  });
+  // it(`should have as title 'brand-new-smartaml'`, () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const app = fixture.componentInstance;
+  //   expect(app.title).toEqual('brand-new-smartaml');
+  // });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);

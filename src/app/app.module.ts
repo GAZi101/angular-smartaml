@@ -13,20 +13,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatMenuModule } from '@angular/material/menu';
-// import { NavbarTreeComponent } from './global-components/navbar-tree/navbar-tree.component';
-// import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
-
-@NgModule({
-  exports: [
-    MatToolbarModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatMenuModule
-  ]
-})
+import { MatIconModule } from '@angular/material/icon';
+import { NavbarTreeComponent } from './global-components/navbar-tree/navbar-tree.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarTreeComponent
   ],
   imports: [
     BrowserModule,
@@ -34,11 +26,23 @@ import { MatMenuModule } from '@angular/material/menu';
     NgbModule,
     HttpClientModule,
     BrowserAnimationsModule,
+
+    //material
     MatToolbarModule,
     MatButtonModule,
     MatButtonToggleModule,
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule
   ],
+  exports: [
+    AppComponent,
+    NavbarTreeComponent,
+    MatToolbarModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatMenuModule,
+    MatIconModule
+ ],
   providers: [LoginInfo],
   bootstrap: [AppComponent]
 })
